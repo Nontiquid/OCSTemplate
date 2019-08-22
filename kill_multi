@@ -1,0 +1,24 @@
+#!/bin/bash
+#Script by Shadow046
+#08-09-2019
+#Tested on Debian VPS only
+
+clear
+if [ -f "/etc/openvpn/openvpn-status.log" ]; then
+        line=`cat /etc/openvpn/openvpn-status.log | wc -l`
+        a=$((3+((line-8)/2)))
+        b=$(((line-8)/2))
+        cat /etc/openvpn/openvpn-status.log | head -n $a | tail -n $b | cut -d, -f1 | sed -e 's/,/   /g' > /tmp/vpn-login-db.txt
+        sort /tmp/vpn-login-db.txt | uniq -d > /etc/openvpn/double_login.txt
+        filename='/etc/openvpn/double_login.txt'
+          while read line; do
+            if [ -z "$line" ]
+            then
+              echo "close" 
+            else
+              cat /etc/openvpn/double_login.txt >> /etc/lock
+              date >>  /etc/lock
+              passwd -l $line
+            fi
+          done < $filename
+fi
