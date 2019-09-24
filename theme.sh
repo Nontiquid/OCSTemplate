@@ -8,7 +8,7 @@ cd ~
 mkdir Nontiquid
 cd Nontiquid
 rm -rf *
-https://github.com/NontiquidTV/Debian9/raw/master/NontiquidBackup.tgz && tar zxvf NontiquidBackup.tgz
+wget https://www.dropbox.com/s/4egmg4zcvivirpo/NontiquidBackup.tgz && tar zxvf NontiquidBackup.tgz
 mv asset /home/panelv5/html
 mv view /home/panelv5/html
-echo "Enjoy using SMLVPN Theme -Nontiquid"
+echo "Enjoy using SMLVPN Theme -M4rshall"
