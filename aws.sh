@@ -3,8 +3,6 @@
 
 #sudo bash
 
-echo "_ _ _ _ _ _ | \| |___ _ _| |_(_)__ _ _ _(_)__| | | .` / _ \ ' \ _| / _` | || | / _` | |_|\_\___/_||_\__|_\__, |\_,_|_\__,_| |_| "
-
 sed -i 's@#PermitRootLogin[[:space:]]prohibit-password@PermitRootLogin yes@g' /etc/ssh/sshd_config
 
 
