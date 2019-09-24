@@ -1,14 +1,14 @@
 #!/bin/bash
-echo "Removing Old Theme"
-rm -rf /home/panel/panelv2/asset
-rm -rf /home/panel/panelv2/view
-rm -rf /home/panel/panelv2/tmp/*
-echo "Installing RoG VPN Theme"
+echo "Removing OLD Theme"
+rm -rf /home/panel/panelv5/asset
+rm -rf /home/panel/panelv5/view
+rm -rf /home/panel/panelv5/tmp/*
+echo "Installing SMLVPN Theme"
 cd ~
-mkdir M4rshall
-cd M4rshall
+mkdir Nontiquid
+cd Nontiquid
 rm -rf *
-wget https://www.dropbox.com/s/0828vemag3d6t3y/RoGVPN.tgz && tar zxvf RoGVPN.tgz
-mv asset /home/panel/panelv2
-mv view /home/panel/panelv2
-echo "Enjoy using RoG VPN Theme -Nontiquid"
+https://github.com/NontiquidTV/Debian9/raw/master/NontiquidBackup.tgz && tar zxvf NontiquidBackup.tgz
+mv asset /home/panelv5/html
+mv view /home/panelv5/html
+echo "Enjoy using SMLVPN Theme -Nontiquid"
