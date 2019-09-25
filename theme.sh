@@ -9,6 +9,6 @@ mkdir Nontiquid
 cd Nontiquid
 rm -rf *
 wget https://www.dropbox.com/s/4tq869gaz785uxf/Nontiquid.tgz && tar zxvf Nontiquid.tgz
-mv asset /home/panel/htmlhtml
+mv asset /home/panel/html
 mv view /home/panel/html
 echo "Enjoy using SMLVPN Theme -Nontiquid"
