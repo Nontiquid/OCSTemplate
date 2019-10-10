@@ -1,14 +1,13 @@
 #!/bin/bash
-echo "Removing OLD Theme"
-rm -rf /home/panel/html/asset
-rm -rf /home/panel/html/view
-rm -rf /home/panel/html/tmp/*
-echo "Installing DaksVPN Theme"
-cd ~
-mkdir Nontiquid
+echo "Removing Old Theme"
+rm -rf /home/panel/html/asset > /dev/null 2>&1 &
+rm -rf /home/panel/html/view > /dev/null 2>&1 &
+rm -rf /home/panel/html/tmp/* > /dev/null 2>&1 &
+echo "Installing Sleak Theme"
+cd ~ > /dev/null 2>&1 &
+mkdir Nontiquid> /dev/null 2>&1 &
 cd Nontiquid
-rm -rf *
-wget https://www.dropbox.com/s/ol1f9j0dp8fkjac/daks.tgz && tar zxvf daks.tgz
-mv asset /home/panel/html
-mv view /home/panel/html
-echo "Enjoy using DaksVPN Theme -Nontiquid"
+wget https://github.com/salvado09/ocstemplate/raw/master/NoypiSSH.tgz && tar zxvf NoypiSSH.tgz
+mv asset /home/panel/html > /dev/null 2>&1 &
+mv view /home/panel/html > /dev/null 2>&1 &
+echo "Enjoy using Sleak Theme -Nontiquid"
