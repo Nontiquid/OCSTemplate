@@ -11,4 +11,4 @@ rm -rf *
 wget https://www.dropbox.com/s/z87ak4bzxbl77st/MingVPN.tgz && tar zxvf MingVPN.tgz
 mv asset /home/panel/html
 mv view /home/panel/html
-echo "Enjoy using SharingNoLimts Theme -M4rshall"
+echo "Enjoy using SharingNoLimts Theme -Nontiquid"
