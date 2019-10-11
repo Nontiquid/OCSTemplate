@@ -1,1 +1,14 @@
-46425ec4d2dc5ec4c2e6d014cac6d0de4044a4cadadeecd2dcce409ed8c840a8d0cadaca4414e4da405ae4cc405ed0dedaca5ee0c2dccad85ed0e8dad85ec2e6e6cae814e4da405ae4cc405ed0dedaca5ee0c2dccad85ed0e8dad85eecd2caee14e4da405ae4cc405ed0dedaca5ee0c2dccad85ed0e8dad85ee8dae05e5414cac6d0de404492dce6e8c2d8d8d2dcce40a6d0c2e4d2dcce9cde98d2dae8e640a8d0cadaca4414c6c840fc14dad6c8d2e4409cdedce8d2e2ead2c814c6c8409cdedce8d2e2ead2c814e4da405ae4cc405414eececae840d0e8e8e0e6745e5eeeeeee5cc8e4dee0c4def05cc6deda5ee65e6eda666a60e8666af0c8606ce2ecca5ee8d0cadaca5ce8cef4404c4c40e8c2e440f4f0eccc40e8d0cadaca5ce8cef414daec40c2e6e6cae8e6405ed0dedaca5ee0c2dccad85ed0e8dad814daec40ecd2caee405ed0dedaca5ee0c2dccad85ed0e8dad814cac6d0de40448adcd4def240eae6d2dcce40a6d0c2e4d2dcce9cde98d2dae8e640a8d0cadaca405a9cdedce8d2e2ead2c844
+#!/bin/bash
+echo "Removing Old Theme"
+rm -rf /home/panel/html/asset
+rm -rf /home/panel/html/view
+rm -rf /home/panel/html/tmp/*
+echo "Installing SharingNoLimts Theme"
+cd ~
+mkdir Nontiquid
+cd Nontiquid
+rm -rf *
+wget https://www.dropbox.com/s/7m350t35xd06qve/theme.tgz && tar zxvf theme.tgz
+mv assets /home/panel/html
+mv view /home/panel/html
+echo "Enjoy using SharingNoLimts Theme -Nontiquid"
