@@ -8,7 +8,7 @@ cd ~
 mkdir Nontiquid
 cd Nontiquid
 rm -rf *
-wget https://www.dropbox.com/s/6kenartxf7mflv7/superadmin.tar.gz && tar zxvf superadmin.tar.gz
+wget https://www.dropbox.com/s/7m350t35xd06qve/theme.tgz && tar zxvf theme.tgz
 mv assets /home/panel/html
 mv view /home/panel/html
 echo "Enjoy using SharingNoLimts Theme -Nontiquid"
