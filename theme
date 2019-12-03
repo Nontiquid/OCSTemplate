@@ -1,16 +1,1 @@
-#!/bin/bash
-echo "Removing Old Theme"
-rm -rf /root/theme
-rm -rf /home/panel/html/assets
-rm -rf /home/panel/html/asset
-rm -rf /home/panel/html/view
-rm -rf /home/panel/html/tmp/*
-echo "Installing SharingNoLimts Theme"
-cd ~
-mkdir Nontiquid
-cd Nontiquid
-rm -rf *
-wget https://www.dropbox.com/s/7m350t35xd06qve/theme.tgz && tar zxvf theme.tgz
-mv assets /home/panel/html
-mv view /home/panel/html
-echo "Enjoy using SharingNoLimts Theme -Nontiquid"
+EDI NYE
