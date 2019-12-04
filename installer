@@ -33,17 +33,23 @@ do
 		rm -f DebianVPS* && wget -q 'https://raw.githubusercontent.com/Bonveio/BonvScripts/master/DebianVPS-Installer' && chmod +x DebianVPS-Installer && ./DebianVPS-Installer
 		;;
 		3)
-clear
+                clear
 		echo "Starting to install..."
 		sleep 2
 		export B='https://github.com/Bonveio/BonvScripts/releases/download/Debian-OpenVPN-Monitor/Debian-OpenVPN-Monitor.gz' && wget -qO Debian-OpenVPN-Monitor "$B" && chmod +x Debian* && ./Debian-OpenVPN-Monitor
 		;;
 		4)
+                clear
+		echo "Starting to install..."
+		sleep 2
+		export B='https://github.com/Bonveio/BonvScripts/releases/download/Debian-OpenVPN-Monitor/Debian-OpenVPN-Monitor.gz' && wget -qO Debian-OpenVPN-Monitor "$B" && chmod +x Debian* && ./Debian-OpenVPN-Monitor
+		;;
+		5)
 		clear
 		echo "Not Available Yet"
 		sleep 5
 		;;
-		5)
+		6)
 		clear
 		echo "Installation was cancelled"
 		sleep 5
