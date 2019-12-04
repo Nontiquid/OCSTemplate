@@ -11,10 +11,7 @@ fi
 while :
 do
 	clear
-	echo " "
-	echo "To install this VPN service,"
-	echo "choose your own VPS Provider first"
-	echo " "
+	echo " "	
 	echo "    [ MENU ]"
 	echo "[1] OCSPanel Installer [ Bon-chan ]"
 	echo "[2] Debian 9 VPS Installer [ Bon-chan ]"
