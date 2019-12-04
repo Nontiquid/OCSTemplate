@@ -12,14 +12,6 @@ while :
 do
 	clear
 	echo " "
-	echo " "
-	echo "=======================Debian 9 OCSPanel | VPS ======================="
-	echo " "
-	echo "     ~Welcome to Nontiquid Debian 9 Autoscript~"
-	echo " "
-	echo "=======================Nontiquid======================"
-	echo "=================== BonvScripts ===================="
-	echo " "
 	echo "To install this VPN service,"
 	echo "choose your own VPS Provider first"
 	echo " "
@@ -27,7 +19,7 @@ do
 	echo "[1] OCSPanel Installer [ Bon-chan ]"
 	echo "[2] Debian 9 VPS Installer [ Bon-chan ]"
 	echo "[3] Debian OpenVPN Monitor Installer [ Bon-chan ]"
-	echo "4. Z.COM"
+	echo "[4] CentOS 6 VPS Squid + OpenVPN Installer [ Bon-Chan]"
 	echo "5. Exit"
 	read -p "Choose from 1 to 5 : " option2
 	case $option2 in
