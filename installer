@@ -26,7 +26,7 @@ do
 	echo "    [ MENU ]"
 	echo "[1] OCSPanel Installer [ Bon-chan ]"
 	echo "[2] Debian 9 VPS Installer [ Bon-chan ]"
-	echo "[3]  Cloudsigma"
+	echo "[3] Debian OpenVPN Monitor Installer [ Bon-chan ]"
 	echo "4. Z.COM"
 	echo "5. Exit"
 	read -p "Choose from 1 to 5 : " option2
