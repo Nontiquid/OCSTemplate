@@ -17,37 +17,40 @@ do
 	echo "[2] Debian 9 VPS Installer [ Bon-chan ]"
 	echo "[3] Debian OpenVPN Monitor Installer [ Bon-chan ]"
 	echo "[4] CentOS 6 VPS Squid + OpenVPN Installer [ Bon-Chan]"
-	echo "5. Exit"
+	echo "[5] ShadowsocksR Universal Installer"
+   echo "[6] Exit "
 	read -p "Choose from 1 to 5 : " option2
 	case $option2 in
 		1)
 		clear
-		echo "Starting to install..."
+		echo "OCSPanel Installing"
 		sleep 2
 		wget -q https://autoscripts.bon-chan.ml/DebianOCS-Panel && chmod +x Deb* && ./DebianOCS-Panel
 		;;
 		2)
 		clear
-		echo "Starting to install..."
+		echo "DebianVPS Installing"
 		sleep 2
 		rm -f DebianVPS* && wget -q 'https://raw.githubusercontent.com/Bonveio/BonvScripts/master/DebianVPS-Installer' && chmod +x DebianVPS-Installer && ./DebianVPS-Installer
 		;;
 		3)
-                clear
-		echo "Starting to install..."
+        clear
+		echo "Debian OpenVPN Monitor Installing"
 		sleep 2
 		export B='https://github.com/Bonveio/BonvScripts/releases/download/Debian-OpenVPN-Monitor/Debian-OpenVPN-Monitor.gz' && wget -qO Debian-OpenVPN-Monitor "$B" && chmod +x Debian* && ./Debian-OpenVPN-Monitor
 		;;
 		4)
-                clear
-		echo "Starting to install..."
+     clear
+		echo "Centos6 VPS Squid + OpenVPN Installing"
 		sleep 2
-		export B='https://github.com/Bonveio/BonvScripts/releases/download/Debian-OpenVPN-Monitor/Debian-OpenVPN-Monitor.gz' && wget -qO Debian-OpenVPN-Monitor "$B" && chmod +x Debian* && ./Debian-OpenVPN-Monitor
+		rm -f centos6* && export url='https://raw.githubusercontent.com/Bonveio/BonvScripts/master/centos6-ovpn-squid' && curl -4sO "$url" || wget -4q "$url" && chmod +x centos6-ovpn-squid && ./centos6-ovpn-squid
 		;;
 		5)
-		clear
-		echo "Not Available Yet"
-		sleep 5
+     clear
+		echo "ShadowsocksR Universal Installing"
+		sleep 2
+		wget -q 'https://autoscripts.bon-chan.ml/shadowsocksR.sh' && chmod +x shadowsocksR.sh && ./shadowsocksR.sh &&
+sed -i 's|accept = 443|accept = 445|g' /etc/stunnel/stunnel.conf && service stunnel4 restart
 		;;
 		6)
 		clear
