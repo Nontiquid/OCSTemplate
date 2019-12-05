@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Removing Old Theme"
+rm -rf test
 rm -rf /home/panel/html/asset
 rm -rf /home/panel/html/view
 rm -rf /home/panel/html/tmp/*
