@@ -78,8 +78,7 @@ echo -e "    \e[92m[\e[0m5\e[92m]\e[0m LadyClare Panel Installer"
 echo -e "    \e[92m[\e[0m6\e[92m]\e[0m OCSPanel Theme Installer"
 echo -e "    \e[92m[\e[0m7\e[92m]\e[0m Install or Remove OpenVPN Angristan"
 echo -e "    \e[92m[\e[0m8\e[92m]\e[0m Debian 9 | 10 Sofether Installer"
-echo -e "    \e[92m[\e[0m9\e[92m]\e[0m Enabled Root "
-echo -e "    \e[92m[\e[0m10\e[92m]\e[0m Exit "
+echo -e "    \e[92m[\e[0m9\e[92m]\e[0m Exit "
 echo -e "\e[92m[][][]======================================[][][]\e[0m"
 	until [[ "$OPTIONS" =~ ^[1-9]$ ]]; do
 	read -rp $'  Choose from \e[92m[\e[0m1-9\e[92m]\e[0m: ' -e OPTIONS
