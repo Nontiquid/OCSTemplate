@@ -81,8 +81,8 @@ echo -e "    \e[92m[\e[0m8\e[92m]\e[0m Debian 9 | 10 Sofether Installer"
 echo -e "    \e[92m[\e[0m9\e[92m]\e[0m Enabled Root "
 echo -e "    \e[92m[\e[0m10\e[92m]\e[0m Exit "
 echo -e "\e[92m[][][]======================================[][][]\e[0m"
-	until [[ "$OPTIONS" =~ ^[1-10]$ ]]; do
-	read -rp $'  Choose from \e[92m[\e[0m1-10\e[92m]\e[0m: ' -e OPTIONS
+	until [[ "$OPTIONS" =~ ^[1-9]$ ]]; do
+	read -rp $'  Choose from \e[92m[\e[0m1-9\e[92m]\e[0m: ' -e OPTIONS
 	done
 	echo -e "\e[1;32m Starting...\e[0m"
 	sleep 1
@@ -104,10 +104,10 @@ echo -e "\e[92m[][][]======================================[][][]\e[0m"
 	elif [[ "$OPTIONS" == '6' ]]; then
 	FS="$FILE6"
 	LS="$LINK6"
-  elif [[ "$OPTIONS" == '7' ]]; then
+        elif [[ "$OPTIONS" == '7' ]]; then
 	FS="$FILE7"
 	LS="$LINK7"
-  elif [[ "$OPTIONS" == '8' ]]; then
+        elif [[ "$OPTIONS" == '8' ]]; then
 	FS="$FILE8"
 	LS="$LINK8"
 	elif [[ "$OPTIONS" == '9' ]]; then
